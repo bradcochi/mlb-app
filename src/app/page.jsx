@@ -50,6 +50,18 @@ export default function Home() {
     getScoreboardData({ date: formatDate(event.target.value) })
   }
 
+  async function getGameData() {
+    let gameData = await fetch(`/api/game/1`);
+    gameData = await gameData.json();
+    console.log(gameData);
+  }
+
+  useEffect(() => {
+    getGameData();
+  }, []);
+
+  const [gameData, setGameData] = useState();
+
   return (
     <main>
       <input value={date} type="date" onChange={handleDateChange}></input>
