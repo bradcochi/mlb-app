@@ -9,6 +9,7 @@
 - MLB Single Game Page: [D-backs 7, Tigers 5 Final Score (06/11/2023) on MLB Gameday \| MLB.com](https://www.mlb.com/gameday/d-backs-vs-tigers/2023/06/11/717804/final/box)
 - MLB Schedule API example endpoint: https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2023-6-8&endDate=2023-6-8
 - MLB Single Game API example endpoint: https://statsapi.mlb.com/api/v1.1/game/717844/feed/live
+- MLB API Endpoints: https://github.com/toddrob99/MLB-StatsAPI/blob/master/statsapi/endpoints.py
 
 ### Layout
 
