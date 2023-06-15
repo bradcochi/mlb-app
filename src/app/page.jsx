@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { useState, useEffect } from "react"
 
 function getToday() {
@@ -29,7 +30,7 @@ function formatDate(date) {
   return `${year}-${month}-${day}`
 }
 
-export default function Home() {
+export default function Scoreboard() {
   const [date, setDate] = useState(getToday())
   const [games, setGames] = useState([])
   console.log({ games })
@@ -100,11 +101,11 @@ export default function Home() {
                 </div>
                 {!hasNotStarted && <div>{game.teams.home.score}</div>}
               </div>
-              <a href="api/gameId">
+              <Link href={`/game/${game.gamePk}/`}>
                 <div className="text-center font-mono text-sm font-semibold text-blue-600">
                   Box
                 </div>
-              </a>
+              </Link>
             </div>
           )
         })}
