@@ -1,4 +1,3 @@
-import Link from "next/link"
 import "./globals.css"
 import { Inter } from "next/font/google"
 
@@ -12,18 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <header className="bg-sky-950 p-2">
-          <Link href="/">
-            <img
-              src="https://www.mlbstatic.com/team-logos/league-on-dark/1.svg"
-              className="h-24"
-              alt="mlb logo"
-            ></img>
-          </Link>
-        </header>
-        <div className="m-4">{children}</div>
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }
