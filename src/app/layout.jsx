@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
             ></img>
           </Link>
         </header>
-        {children}
+        <div className="m-4">{children}</div>
       </body>
     </html>
   )
